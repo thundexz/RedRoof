@@ -61,10 +61,6 @@ nav {
   background: #009978;
 }
 
-.fixed-top {
-  position: relative;
-}
-
 .overlay {
   height: 500px;
   width: 100%;
