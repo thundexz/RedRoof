@@ -1,96 +1,121 @@
-
-
-nav{
-    box-shadow:0px 3px 12px 0px rgba(25, 25, 25, 0.3)
+nav {
+  box-shadow: 0px 3px 12px 0px rgba(25, 25, 25, 0.3);
 }
 
-.Logo{
-    height: 100%;
+.Logo {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: rgb(226, 68, 68);
+  font-size: 1.25em;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #910404;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.navv-link.active {
+  color: #000;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009978;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link:active::before {
     width: 100%;
-    
-
+    visibility: visible;
+  }
 }
 
-
-
-.navbar-toggler{
-    border: none;
-    background-color: rgb(226, 68, 68);
-    font-size: 1.25em;
-    outline: none;
+.banner {
+  background: #009978;
 }
 
-.navbar-toggler-icon{
-    color: white;
+.fixed-top {
+  position: relative;
+  fixed-top: 100%;
 }
 
-.navbar-toggler:focus, .btn-close:focus{
-    box-shadow: none;
-    outline: none;
+.overlay {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.nav-link{
-    color: #910404;
-    font-weight: 500;
-    position: relative;
-    text-decoration: none;
+#section-home {
+  margin: 10px auto;
+  padding: 10px 10px 10px;
 }
 
-.nav-link:hover, .navv-link.active{
-    color: #000;
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
 }
 
-
-
-@media (min-width: 991px){
-    .nav-link::before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: #009978;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
-
-    .nav-link:hover::before , .nav-link:active::before{
-        width: 100%;
-        visibility: visible;
-    }
-
+/*=================== welcome section start ====================*/
+.welcome {
+  padding-top: 40px;
 }
-
-
-.banner{
-    background: #009978;
+.welcome-images .card {
+  border-radius: 0;
+  border: 0;
+  margin: 0 4px 4px 0;
 }
-
-
-.fixed-top{
-    position: relative;
-    fixed-top:100%
-    
-}
-
-.overlay{
-    height:500px;
+@media (max-width: 991px) {
+  .welcome-images .card img {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+  }
+}
+@media (min-width: 991px) {
+  .welcome-content {
+    padding-left: 60px;
+  }
 }
 
-#section-home{
-    margin: 10px auto;
-    padding: 10px 10px 10px;
+.welcome-images{
+  
+  height: 300px;
+  width: 100%;
+  
+  
 }
 
-.heading{
-    display: flex;
-    justify-content: center;
-    margin-top: 8%;
+.card{  
+  width:550px ;
+  height:100% ;
+  overflow: hidden;
+  
 }
