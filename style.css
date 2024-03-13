@@ -106,3 +106,33 @@ nav {
     height: 835px;
   }
 }
+/*=================== welcome section start ====================*/
+.welcome {
+  padding-top: 40px;
+}
+.welcome-images .card {
+  border-radius: 0;
+  border: 0;
+  margin: 0 4px 4px 0;
+}
+@media (max-width: 991px) {
+  .welcome-images .card img {
+    width: 100%;
+  }
+}
+@media (min-width: 991px) {
+  .welcome-content {
+    padding-left: 60px;
+  }
+}
+
+.welcome-images {
+  height: 300px;
+  width: 100%;
+}
+
+.card {
+  width: 550px;
+  height: 100%;
+  overflow: hidden;
+}
