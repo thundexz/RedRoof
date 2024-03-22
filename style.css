@@ -298,8 +298,6 @@ nav {
 }
 
 #read-more{
-  height: 70%;
-  width: 10%;
   display: inline-block;
   padding: 10px auto;
   font-weight: 600;
@@ -318,6 +316,23 @@ nav {
   background-color: #910404eb;
 }
 
-.mr{
-  margin: 0;
+/*footer*/
+
+.footer-bg{
+  background-color: #d6c1c1bc;
+  color: rgb(223, 15, 15);
+  margin: 10px auto;
+  margin-bottom: 0;
+  text-underline-offset: ;
+}
+
+.newswid{
+  width: 40%;
+  border: 0;
+  
+}
+
+.newswid:hover{
+  border: none;
+  
 }
